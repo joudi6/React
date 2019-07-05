@@ -94,7 +94,9 @@ class Post extends Component {
 
     let showPosts = (
       <div className="main">
-        <h2 onClick={this.switchAdd}>Add New Post</h2>
+        <h2 onClick={this.switchAdd}>
+          <u>Add New Post</u>
+        </h2>
         {this.state.loading === true ? <h2>Loading...</h2> : lists}
       </div>
     );
